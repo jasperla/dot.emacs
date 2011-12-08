@@ -5,5 +5,6 @@
 (require 'keybindings)
 (require 'layout)
 (require 'c-mode-sane)
+(require 'packages)
 (when window-system
   (require 'x11))

@@ -32,3 +32,9 @@
 (autoload 'enable-paredit-mode "paredit"
   "Turn on pseudo-structural editing of Lisp code." t)
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
+(define-key clojure-mode-map "{" 'paredit-open-brace)
+(define-key clojure-mode-map "}" 'paredit-close-brace)
+
+;; Zenburn theme
+(require 'color-theme)
+(require 'zenburn)

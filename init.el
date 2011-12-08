@@ -7,4 +7,5 @@
 (require 'c-mode-sane)
 (require 'packages)
 (when window-system
-  (require 'x11))
+  (require 'x11)
+  (zenburn))

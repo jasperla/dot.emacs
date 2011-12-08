@@ -12,7 +12,7 @@
         (cursor-color . "grey37")
         (mouse-color . "black")))
 
-(set-default-font "6x13")
+(set-default-font "-xos4-terminus-medium-*-*-*-12-*-*-*-*-*-iso8859-2")
 
 (blink-cursor-mode -1)
 (show-paren-mode 1)
@@ -51,4 +51,3 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward)
-(autoload 'ibuffer-and-update "ibuffer")

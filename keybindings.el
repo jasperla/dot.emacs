@@ -20,7 +20,6 @@
 
 (global-unset-key (kbd "C-z"))
 (global-unset-key (kbd "C-h"))
-(global-set-key (kbd "C-x C-b") 'ibuffer-and-update)
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 (global-set-key (kbd "C-c l") 'copy-line)
 (global-set-key (kbd "M-g M-g") 'goto-line)

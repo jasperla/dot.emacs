@@ -14,6 +14,7 @@
 
 ;; Clojure
 (require 'clojure-mode)
+(add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
 
 ;; Template Toolkit
 (require 'tt-mode)

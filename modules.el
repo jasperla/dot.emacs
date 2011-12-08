@@ -18,9 +18,6 @@
 (load "~/.emacs.d/modules/tt-mode.el")
 (add-to-list 'auto-mode-alist '("\\.tt$" . tt-mode))
 
-;; Haskell
-(load "~/.emacs.d/modules/haskell/haskell-site-file")
-
 ;; MPC
 (load "~/.emacs.d/modules/mpc")
 

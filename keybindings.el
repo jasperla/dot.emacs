@@ -27,6 +27,9 @@
 (global-set-key (kbd "<f4>") 'other-window)
 (global-set-key (kbd "C-M-l") 'mode-line-other-buffer)
 
+(global-set-key (kbd "C-x C-;") 'comment-region)
+(global-set-key (kbd "C-x C-:") 'uncomment-region)
+
 (global-set-key (kbd "<f2>")
                 (lambda ()
                   (interactive)

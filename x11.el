@@ -1,8 +1,5 @@
 (provide 'x11)
-(load "~/.emacs.d/modules/highlight-current-line")
-
-(highlight-current-line-on t)
-(set-face-background 'highlight-current-line-face "#e9e9e9")
+(global-hl-line-mode 1)
 
 (global-font-lock-mode 1)
 

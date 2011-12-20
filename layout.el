@@ -12,6 +12,10 @@
         (cursor-color . "grey37")
         (mouse-color . "black")))
 
+; For emacs23
+;(menu-bar-mode -1)
+;(tool-bar-mode -1)
+
 (set-default-font "-xos4-terminus-medium-*-*-*-12-*-*-*-*-*-iso8859-2")
 
 (blink-cursor-mode -1)

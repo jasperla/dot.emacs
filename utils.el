@@ -45,5 +45,6 @@
   (split-window-vertically)
   (other-window 1))
 
-;; Change builtin colors to 'green', as bold blue is unreadable on black.
-(set-face-foreground 'font-lock-builtin-face "green")
+;; Change builtin colors to 'green', as bold blue is unreadable on black
+; (with zenburn)
+;(set-face-foreground 'font-lock-builtin-face "green")

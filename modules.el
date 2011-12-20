@@ -1,6 +1,7 @@
 (provide 'modules)
 
 (add-to-list 'load-path "~/.emacs.d/modules/")
+(add-to-list 'load-path "~/.emacs.d/vendor/")
 
 ;; Puppet
 (autoload 'puppet-mode "puppet-mode" "Major mode for editing puppet manifests")
@@ -20,6 +21,17 @@
 (require 'tt-mode)
 (add-to-list 'auto-mode-alist '("\\.tt$" . tt-mode))
 
+;; Markdown
+(autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
+(setq auto-mode-alist (cons '("\\.text" . markdown-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
+
+;; Org-Mode
+;(add-to-list 'load-path "~/.emacs.d/vendor/org/lisp/")
+;(add-to-list 'load-path "~/.emacs.d/vendor/org/")
+;(require 'org-install)
+;(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+
 ;; MPC
 (require 'mpc)
 
@@ -37,4 +49,5 @@
 
 ;; Zenburn theme
 (require 'color-theme)
-(require 'zenburn)
+;(require 'zenburn)
+(require 'candy-chain)

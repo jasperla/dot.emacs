@@ -8,4 +8,4 @@
 (require 'packages)
 (when window-system
   (require 'x11)
-  (zenburn))
+  (color-theme-candy-chain))

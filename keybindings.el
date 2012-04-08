@@ -42,6 +42,8 @@
                   (when (> (count-windows) 1)
                     (delete-window))))
 
+(global-set-key (kbd "C-x r") 'revert-buffer)
+
 (defvar grep-and-find-map (make-sparse-keymap))
 (define-key global-map "\C-cf" grep-and-find-map)
 (define-key global-map "\C-cfg" 'find-grep-dired)

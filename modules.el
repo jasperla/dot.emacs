@@ -57,3 +57,10 @@
 (require 'color-theme)
 ;(require 'zenburn)
 (require 'candy-chain)
+
+;; Erlang
+(setq load-path (cons  "/usr/local/lib/erlang/lib/tools-2.6.7/emacs" load-path))
+(setq erlang-root-dir "/usr/local/lib/erlang")
+(setq exec-path (cons "/usr/local/lib/erlang/bin" exec-path))
+(require 'erlang)
+(add-to-list 'auto-mode-alist '("\\.erl$" . erlang-mode))

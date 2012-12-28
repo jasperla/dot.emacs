@@ -4,14 +4,17 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 
 ;; Puppet
-(autoload 'puppet-mode "puppet-mode" "Major mode for editing puppet manifests")
+(require 'puppet-mode)
+(add-to-list 'auto-mode-alist '("\\.pp\\'" . puppet-mode))
 
 ;; Forth
 (require 'forth-mode)
 (add-to-list 'auto-mode-alist '("\\.fs$" . forth-mode))
 
 ;; Python
-(autoload 'python-mode "python-mode" "Python Mode." t)
+(require 'python-mode)
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+(add-to-list 'interpreter-mode-alist '("python3.2" . python-mode))
 
 ;; Clojure
 (require 'clojure-mode)
@@ -22,7 +25,7 @@
 (add-to-list 'auto-mode-alist '("\\.tt$" . tt-mode))
 
 ;; Markdown
-(autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
+(require 'markdown-mode)
 (setq auto-mode-alist (cons '("\\.text" . markdown-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
@@ -42,7 +45,7 @@
 (require 'mpc)
 
 ;; lua
-(autoload 'lua-mode "lua-mode")
+(require 'lua-mode)
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-hook 'lua-mode-hook (lambda () (setq lua-indent-level 2)))
 

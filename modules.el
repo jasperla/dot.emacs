@@ -1,5 +1,8 @@
 (provide 'modules)
 
+;; Augeas can be handled by sml-mode
+(setq auto-mode-alist (cons '("\\.aug" . sml-mode) auto-mode-alist))
+
 ;; Markdown
 (setq auto-mode-alist (cons '("\\.text" . markdown-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))

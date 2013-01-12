@@ -46,8 +46,8 @@
 ;(setq tab-width 8)
 
 ;; Turn on tabs
-;(setq indent-tabs-mode t)
-;(setq-default indent-tabs-mode t)
+(setq indent-tabs-mode t)
+(setq-default indent-tabs-mode t)
 
 (setq column-number-mode t)
 

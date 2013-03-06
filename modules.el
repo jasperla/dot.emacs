@@ -13,6 +13,11 @@
 ;; Indent two spaces, not three.
 (add-hook 'lua-mode-hook (lambda () (setq lua-indent-level 2)))
 
+;; Enable YASnippet
+;(yas-global-mode 1)
+;(setq yas/root-directory "~/emacs.d/snippets/sml-mode")
+;(setq yas/root-directory "~/emacs.d/snippets/puppet-mode")
+
 ;; TODO
 ;; Forth
 ;(require 'forth-mode)
@@ -25,3 +30,5 @@
 ;; Clojure
 ;(require 'clojure-mode)
 ;(add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
+
+(add-hook 'ruby-mode-hook (lambda () (local-set-key "\r" 'newline-and-indent)))

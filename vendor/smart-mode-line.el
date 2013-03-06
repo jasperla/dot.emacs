@@ -399,14 +399,14 @@ Otherwise, setup the mode-line."
                                     " ")))
        
        ;; Position
-       (:eval (propertize sml/col-number-format
-                          'face 'sml/col-number
+       (:eval (propertize sml/line-number-format
+                          'face 'sml/line-number
                           'help-echo (format-mode-line "Buffer size:\n\t%IB")))
        (:eval (propertize sml/numbers-separator
                           'face 'sml/numbers-separator
                           'help-echo (format-mode-line "Buffer size:\n\t%IB")))
-       (:eval (propertize sml/line-number-format
-                          'face 'sml/line-number
+       (:eval (propertize sml/col-number-format
+                          'face 'sml/col-number
                           'help-echo (format-mode-line "Buffer size:\n\t%IB")))
 
        ;; Modified status

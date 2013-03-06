@@ -16,7 +16,7 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
-(set-default-font "-xos4-terminus-medium-*-*-*-12-*-*-*-*-*-iso8859-2")
+;(set-default-font "-xos4-terminus-medium-*-*-*-12-*-*-*-*-*-iso8859-2")
 
 (blink-cursor-mode -1)
 (show-paren-mode 1)
@@ -32,18 +32,13 @@
   scroll-conservatively 1
   mouse-yank-at-point t
   kill-whole-line t
-  dired-listing-switches "-alv"
+  dired-listing-switches "-al"
   dired-recursive-deletes 'top
   compile-command "make "
   compilation-scroll-output t
-  diff-switches "-cpu"
   show-trailing-whitespace t)
 
 (global-set-key (kbd "TAB") 'self-insert-command)
-
-;; Set the tab width
-;(setq default-tab-width 8)
-;(setq tab-width 8)
 
 ;; Turn on tabs
 (setq indent-tabs-mode t)

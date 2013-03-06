@@ -8,8 +8,6 @@
 
 (global-set-key (kbd "C-l") 'clear-shell)
 
-(global-set-key (kbd "C-c c") 'compile)
-
 (defun clear-shell ()
   (interactive)
   (let ((comint-buffer-maximum-size 0))

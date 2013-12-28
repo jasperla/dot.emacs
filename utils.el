@@ -41,6 +41,16 @@
 (add-hook 'php-mode-hook 'programming-mode-keys)
 (add-hook 'perl-mode-hook 'programming-mode-keys)
 
+(add-hook 'ruby-mode-hook
+  (lambda ()
+    (define-key ruby-mode-map "\C-c#" 'comment-or-uncomment-region)))
+
 (defun in-other-window ()
   (split-window-vertically)
   (other-window 1))
+
+(defun iwb ()
+  "indent whole buffer"
+  (interactive)
+  (delete-trailing-whitespace)
+  (indent-region (point-min) (point-max) nil))

@@ -2,3 +2,6 @@
 /elpa
 /swank
 \#*
+url
+snippets
+eshell

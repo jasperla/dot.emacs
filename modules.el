@@ -13,6 +13,12 @@
 ;; Indent two spaces, not three.
 (add-hook 'lua-mode-hook (lambda () (setq lua-indent-level 2)))
 
+;; Coffee
+(setq auto-mode-alist (cons '("\\.coffee" . coffee-mode) auto-mode-alist))
+(custom-set-variables '(coffee-tab-width 2))
+;;(add-hook 'coffee-mode-hook '(lambda ()
+;;  (local-set-key (kbd "RET") 'newline-and-indent)))
+
 ;; Enable YASnippet
 ;(yas-global-mode 1)
 ;(setq yas/root-directory "~/emacs.d/snippets/sml-mode")

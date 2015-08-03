@@ -1,4 +1,8 @@
 (provide 'x11)
+
+(require 'theme-switcher)
+(load-theme 'monokai t)
+
 (global-hl-line-mode 1)
 
 (global-font-lock-mode 1)
@@ -18,8 +22,6 @@
 	    (set-face-foreground 'diff-added-face "darkblue")
 	    (set-face-foreground 'diff-changed-face "royalblue")
 	    (set-face-foreground 'diff-removed-face "firebrick4l")))
-
-(load-theme 'monokai t)
 
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 (require 'smart-mode-line)

@@ -53,4 +53,4 @@
 ; In-document syntax highlighting (install htmlize for html export highlighting)
 (setq org-src-fontify-natively t)
 
-(setq org-babel-ruby-command "ruby19")
+(setq org-babel-ruby-command "ruby22")

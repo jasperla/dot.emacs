@@ -1,7 +1,7 @@
 (provide 'x11)
 
 (require 'theme-switcher)
-(load-theme 'monokai t)
+(load-theme 'hipster t)
 
 (global-hl-line-mode 1)
 

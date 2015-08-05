@@ -5,7 +5,7 @@
 
 (global-set-key (kbd "C-x t") 'switch-theme)
 
-(setq themes '(flatland-black flatland monokai))
+(setq themes '(flatland-black flatland monokai soothe ample-zen tango hipster))
 (setq current-theme 0)
 
 (defun lookup-theme (index)

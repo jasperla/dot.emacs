@@ -19,4 +19,4 @@
     (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)))
 
-(add-to-list 'interpreter-mode-alist '("ruby19" . ruby-mode))
+(add-to-list 'interpreter-mode-alist '("ruby22" . ruby-mode))

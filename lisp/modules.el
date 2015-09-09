@@ -38,3 +38,5 @@
 ;(add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
 
 (add-hook 'ruby-mode-hook (lambda () (local-set-key "\r" 'newline-and-indent)))
+(when (eq system-type "OpenBSD")
+  (add-to-list 'interpreter-mode-alist '("ruby22" . ruby-mode)))

@@ -40,3 +40,13 @@
 (add-hook 'ruby-mode-hook (lambda () (local-set-key "\r" 'newline-and-indent)))
 (when (eq system-type "OpenBSD")
   (add-to-list 'interpreter-mode-alist '("ruby22" . ruby-mode)))
+
+(add-to-list 'load-path (concat (getenv "GOPATH")  "/src/github.com/golang/lint/misc/emacs"))
+(require 'golint)
+
+(load (expand-file-name "~/.quicklisp/slime-helper.el"))
+(setq inferior-lisp-program "clisp")
+(setq slime-lisp-implementations
+      '((sbcl ("sbcl"))
+        (clisp ("clisp"))))
+

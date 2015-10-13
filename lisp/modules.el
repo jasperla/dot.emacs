@@ -46,7 +46,4 @@
 
 (load (expand-file-name "~/.quicklisp/slime-helper.el"))
 (setq inferior-lisp-program (executable-find "sbcl"))
-(setq slime-lisp-implementations
-      '((sbcl ("sbcl"))
-        (clisp ("clisp"))))
 

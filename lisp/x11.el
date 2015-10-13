@@ -27,9 +27,10 @@
 	    (set-face-foreground 'diff-changed-face "royalblue")
 	    (set-face-foreground 'diff-removed-face "firebrick4l")))
 
-(require 'smart-mode-line)
+(setq sml/no-confirm-load-theme t)
 (sml/setup)
-(add-to-list 'sml/replacer-regexp-list '("^/usr/ports/" ":P:"))
-(add-to-list 'sml/replacer-regexp-list '("^/usr/src/" ":S:"))
+(setq sml/theme 'dark)
+(add-to-list 'sml/replacer-regexp-list '("^/usr/ports/" ":P:") t)
+(add-to-list 'sml/replacer-regexp-list '("^/usr/src/" ":S:") t)
 
 

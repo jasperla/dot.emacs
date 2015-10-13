@@ -1,7 +1,9 @@
 (provide 'x11)
 
 (require 'theme-switcher)
-(load-theme 'hipster t)
+(load-theme 'flatland t)
+
+(tool-bar-mode -1)
 
 (global-hl-line-mode 1)
 

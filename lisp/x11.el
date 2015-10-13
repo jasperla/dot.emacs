@@ -25,7 +25,6 @@
 	    (set-face-foreground 'diff-changed-face "royalblue")
 	    (set-face-foreground 'diff-removed-face "firebrick4l")))
 
-(add-to-list 'load-path "~/.emacs.d/vendor/")
 (require 'smart-mode-line)
 (sml/setup)
 (add-to-list 'sml/replacer-regexp-list '("^/usr/ports/" ":P:"))

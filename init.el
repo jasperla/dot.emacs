@@ -23,5 +23,5 @@
 (require 'layout)
 (require 'c-mode-sane)
 (require 'org-mode)
-(when window-system
-  (require 'x11))
+; We can has shiny fonts in urxvt too, no need to wrap this in (when window-system ...)
+(require 'x11)

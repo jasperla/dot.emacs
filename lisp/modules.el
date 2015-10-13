@@ -44,6 +44,6 @@
 (add-to-list 'load-path (concat (getenv "GOPATH")  "/src/github.com/golang/lint/misc/emacs"))
 (require 'golint)
 
-(load (expand-file-name "~/.quicklisp/slime-helper.el"))
-(setq inferior-lisp-program (executable-find "sbcl"))
+;(load (expand-file-name "~/.quicklisp/slime-helper.el"))
+;(setq inferior-lisp-program (executable-find "sbcl"))
 
